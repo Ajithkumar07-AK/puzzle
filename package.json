@@ -1,0 +1,28 @@
+{
+  "name": "out-of-the-box",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --test src/tests/*.test.js"
+  },
+  "dependencies": {
+    "@rollup/wasm-node": "^4.65.1",
+    "canvas-confetti": "^1.9.4",
+    "framer-motion": "^11.11.17",
+    "lucide-react": "^0.460.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/canvas-confetti": "^1.9.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.5"
+  }
+}

@@ -1,0 +1,98 @@
+:root {
+  --bg-deep: #07080e;
+  --bg-primary: #0b0d16;
+  --bg-secondary: #121522;
+  --bg-surface: #181c2e;
+  --bg-surface-elevated: #20263d;
+  --bg-surface-glass: rgba(24, 28, 46, 0.75);
+
+  --border-subtle: rgba(148, 163, 184, 0.12);
+  --border-medium: rgba(148, 163, 184, 0.22);
+  --border-bright: rgba(139, 92, 246, 0.4);
+  --border-cyan: rgba(34, 211, 238, 0.4);
+
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #8492a6;
+  --text-dim: #475569;
+
+  --accent-violet: #8b5cf6;
+  --accent-violet-light: #a78bfa;
+  --accent-violet-glow: rgba(139, 92, 246, 0.35);
+
+  --accent-cyan: #06b6d4;
+  --accent-cyan-light: #22d3ee;
+  --accent-cyan-glow: rgba(34, 211, 238, 0.35);
+
+  --accent-amber: #f59e0b;
+  --accent-amber-light: #fbbf24;
+  --accent-amber-glow: rgba(245, 158, 11, 0.35);
+
+  --accent-emerald: #10b981;
+  --accent-emerald-light: #34d399;
+  --accent-emerald-glow: rgba(16, 185, 129, 0.35);
+
+  --accent-rose: #f43f5e;
+  --accent-rose-light: #fb7185;
+  --accent-rose-glow: rgba(244, 63, 94, 0.35);
+
+  --zone1-color: #06b6d4;
+  --zone1-glow: rgba(6, 182, 212, 0.25);
+  --zone2-color: #8b5cf6;
+  --zone2-glow: rgba(139, 92, 246, 0.25);
+  --zone3-color: #f43f5e;
+  --zone3-glow: rgba(244, 63, 94, 0.25);
+  --boss-gold: #f59e0b;
+
+  --font-display: 'Chakra Petch', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.8);
+  --shadow-glow-cyan: 0 0 24px rgba(34, 211, 238, 0.3);
+  --shadow-glow-violet: 0 0 24px rgba(139, 92, 246, 0.3);
+  --shadow-glow-amber: 0 0 24px rgba(245, 158, 11, 0.3);
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* High Contrast Mode */
+body.high-contrast {
+  --bg-deep: #000000;
+  --bg-primary: #050508;
+  --bg-secondary: #0d0e14;
+  --bg-surface: #141724;
+  --border-subtle: #cbd5e1;
+  --border-medium: #ffffff;
+  --text-primary: #ffffff;
+  --text-secondary: #f1f5f9;
+  --text-muted: #cbd5e1;
+  --accent-cyan: #38bdf8;
+  --accent-violet: #c084fc;
+}
+
+/* Reduced Motion Mode */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body.reduced-motion * {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+}
+
